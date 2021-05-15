@@ -1,0 +1,793 @@
+/* element selectors */
+/* body {
+  color: grey;
+}
+
+/* grouping */
+/* h1,
+h2 {
+  color: blue;
+} */
+
+/* ID selector */
+/* #heading,
+#footing {
+  color: green;
+  background-color: greenyellow;
+}
+
+/* class selector */
+/* .green {
+  color: greenyellow;
+}
+.red {
+  color: red;
+} */
+
+/* inheritance */
+/*  */
+/* body {
+  font-family: monospace;
+  line-height: 1.5em;
+}
+div {
+  color: blue;
+  border: 3px solid black;
+}
+h2 {
+  color: green;
+} */
+
+/* universal selector */
+/* p {
+  color: red;
+}
+* {
+  color: blue;
+} */
+
+/* color properties */
+/* color background-color */
+/* #first {
+  color: lightcoral;
+  background-color: lightcyan;
+}
+#second {
+  color: crimson;
+  background: bisque;
+} */
+
+/* RGB 0-255 */
+/* #first {
+  color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+#second {
+  color: rgb(0, 255, 0);
+  background: rgb(255, 255, 255);
+}
+#third {
+  color: rgb(0, 0, 255);
+}
+body {
+  background-color: rgb(108, 151, 153);
+} */
+
+/* RGBA 0-1 opacity */
+/* #first {
+  color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.37);
+}
+#second {
+  color: rgb(0, 255, 0);
+  background: rgb(255, 255, 255);
+}
+#third {
+  color: rgb(0, 0, 255);
+} */
+
+/* HEX values #RRGGBB */
+/* 1-9-ABCDEF */
+/* #first {
+  color: hsl(211, 33%, 74%);
+  background: #ff0000;
+}
+#second {
+  color: #fff;
+  background: #000;
+}
+#third {
+  color: rgb(0, 0, 255);
+} */
+
+/* font-size, width, height, pixels */
+/* h1 {
+  font-size: 60px;
+  width: 200px;
+  height: 300px;
+  background-color: royalblue;
+} */
+
+/* Percent values - relative */
+/* .outer {
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+}
+.inner {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  border: 3px;
+} */
+
+/* 
+  em - relative depends on parent
+  1em = 16px if default browser style
+  1em = base value
+
+  rem - relative depends on root
+  1rem -16px if default browser style
+*/
+/* html {
+  font-size: 32px;
+}
+div {
+  font-size: 10px;
+}
+.relative {
+  font-size: 2rem;
+}
+.absolute {
+  font-size: 64px;
+} */
+
+/* vh- percent of screen height
+  vw- percent of screen width
+*/
+/* .banner {
+  width: 50vw;
+  height: 50vh;
+  background-color: coral;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+} */
+
+/* default browser style & google devTool */
+
+/* 
+  calc()
+  perform math operations
+  mix and match value
+ */
+/* * {
+  margin: 0;
+}
+.navbar {
+  background-color: blue;
+  height: 100px;
+  color: white;
+  font-size: 3rem;
+}
+.banner {
+  background-color: red;
+  min-height: calc(100vh - 100px);
+} */
+
+/* 
+  font-size font-family
+*/
+/* body {
+  font-family: Helvetica;
+}
+h1 {
+  font-family: arial;
+  border-radius: 30px;
+  background-color: cornflowerblue;
+} */
+
+/* 
+  font-stack generic-family
+  serif, sans-serif, cursive, monospace
+*/
+/* body {
+  font-family: "Courier New", Courier, monospaces;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+/* 
+  google fonts 
+  text-align
+  text-indent
+*/
+/* 
+  line-height
+  letter-spacing
+  word-spcaing
+  text-transform
+  text=decoration
+*/
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yesteryear&display=swap"); */
+/* body {
+  font-family: "Yesteryear", cursive;
+  font-weight: 1000;
+  height: 50px;
+  text-align: center;
+  text-transform: lowercase;
+  line-height: 2em;
+}
+.main,
+.subheading {
+  word-spacing: 20px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+  line-height: 2rem;
+} */
+
+/* 
+  css box model
+  content
+  padding
+  border
+  margin
+*/
+/* h1 {
+  background-color: red;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+p {
+  padding: 20px;
+  border: 20px solid yellow;
+  margin: 100px 20px 20px 50px;
+} */
+
+/* border radius
+negative margin */
+/* h1 {
+  background-color: red;
+  padding: 30px;
+  border: 5px solid black;
+  border-radius: 50px;
+  margin-bottom: -100px;
+}
+p {
+  padding: 20px;
+  border: 20px solid yellow;
+  margin: 100px 20px 20px 50px;
+} */
+
+/* 
+default display property
+block: always starts a new line and takes full width
+inline: doesnt start and only take up as much as content space
+*/
+/* .block {
+  background: blue;
+  color: white;
+}
+.inline {
+  background: red;
+  color: white;
+  display: block; 
+} */
+
+/* horizental centering */
+/* body {
+  text-align: center;
+}
+.block {
+  background: blue;
+  color: white;
+  /* width: 150px;
+  margin: 20 auto; */
+/* }
+.inline {
+  background: red;
+  color: white;
+}  */
+
+/* 
+  block: top bottom margin respected
+  inline: top bottom margin not respected
+  mobile navbar
+  list-style-type: property
+  descendant selector
+*/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background: #222;
+  color: #f15025;
+  display: block;
+  padding: 10px 10px;
+  margin: 10px;
+}  */
+
+/* inline-block */
+/* a {
+  font-size: 30px;
+  background: red;
+  margin: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+} */
+
+/* 
+display:none not show block
+opacity:0 will show block
+visibility:hidden; will show block
+*/
+/* div {
+  background: blue;
+  margin: 10px;
+  color: white;
+}
+.none {
+  display: none;
+}
+.opacity-1 {
+  opacity: 1;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.visibility {
+  visibility: hidden;
+} */
+
+/* background url */
+/* last rule order */
+/* background size */
+/* background position */
+/* background attachement (fix img) */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  height: 300px;
+  color: red;
+  flex: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div {
+  height: 200px;
+  color: blue;
+}
+.big {
+  background: url("../img/p2.jpg");
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: space;
+  background-repeat: round; */
+/* background-position: center; */
+/* }
+.small {
+  background: url("../img/p2.jpg");
+  background-size: cover;
+  background-position: 0 100;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.folder {
+  background: url(../img/p2.jpg);
+  background-size: contain;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+} */
+/* div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+.one {
+  background: linear-gradient(red, green);
+}
+.two {
+  background: linear-gradient(to top, red, green, yellow);
+}
+.three {
+  background: linear-gradient(150deg, red, green);
+}
+.four {
+  background: linear-gradient(to top right, red, blue, green);
+} */
+
+/* overlay */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
+}
+.banner {
+  background: url(../img/p2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header {
+  background: linear-gradient(rgba(92, 16, 107, 0.1), rgba(92, 16, 107, 0.5)),
+    url("../img/p3.jpg") center/cover no-repeat fixed;
+} */
+
+/* float */
+/* .banner {
+  border: 5px solid red;
+  padding: 10px;
+}
+.one {
+  float: right;
+  margin-left: 50px;
+} */
+
+/*using float for columns */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  float: left;
+  width: 33.33%;
+  height: 200px;
+}
+.one {
+  float: left;
+  background-color: red;
+  height: 200px;
+  width: 33.33%;
+}
+.two {
+  float: left;
+  background-color: blue;
+  height: 200px;
+  width: 33.33%;
+}
+.three {
+  float: left;
+  background-color: green;
+  height: 200px;
+  width: 33.33%;
+}
+h1 {
+  clear: both;
+} */
+/* button {
+  background-color: red;
+  font-size: 40px;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+div {
+  border: 3px solid;
+  background: yellow;
+  margin-top: 40px;
+  position: static;
+}
+.one {
+  background-color: blue;
+  /* position: relative;
+  top: 40px;
+  right: 50%; */
+/* }
+.two {
+  background-color: green;
+  position: relative;
+}
+.special {
+  background-color: coral;
+  font: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+/* Media Queries
+Responsive Design
+Style elements on different screen sizes
+min-width: starting from
+madx-width: up to
+Mobile First
+*/
+/* body {
+  background-color: yellow;
+}
+.banner {
+  background-color: blue;
+  border-radius: 30px;
+}
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 576px) {
+  body {
+    background-color: red;
+  }
+  .banner {
+    color: blue;
+  }
+  h1 {
+    color: black;
+    font-size: 60px;
+  }
+} */
+
+/* z-index --- z-axis
+  position: static not work
+*/
+/* img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+.banner {
+  margin: 20px;
+  width: 70vw;
+  height: 70vh;
+  border: 5px solid black;
+  position: relative;
+}
+.one {
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.two {
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+}
+.three {
+  top: 20%;
+  left: 20%;
+  z-index: 0;
+} */
+
+/* psudo elements before/after CONTENT not element
+  content: '' required
+  img: does not work
+*/
+/* p::before {
+  content: "hello";
+  display: block;
+  background-color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+}
+p::after {
+  content: "after";
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+  display: block;
+  background-color: black;
+} */
+
+/* 
+  basic selectors:
+  * #ID .className elementName
+*/
+/* descendant and Child Combinators */
+/* .header h1 {
+  color: green;
+}
+.header > h1 {
+  color: purple;
+}
+div h1 {
+  color: red;
+}
+div > h1 {
+  color: blue;
+} */
+
+/* ::first-line ::first-letter */
+/* p::first-line {
+  font-weight: bold;
+}
+p::first-letter {
+  font-size: 3rem;
+} */
+
+/* hover */
+/* p:hover {
+  color: red;
+}
+.header:hover {
+  background-color: blue;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+} */
+
+/* :link :visted :hover :active */
+/* a:link {
+  color: aqua;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: green;
+} */
+
+/* :root root element of the doc
+html elemnt
+general styles
+css variables */
+/* :root {
+  background-color: grey;
+  font-size: 150%;
+}
+h1 {
+  font-size: 3rem;
+}
+.absolute {
+  font-size: 24px;
+}
+.responsive {
+  font-size: 24px;
+} */
+
+/* transform
+  translate() scale() rotate() skew()
+*/
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: translateX(50%);
+}
+.two {
+  background: green;
+  transform: scaleX(0.5);
+  transform: skew(-20deg, -20deg);
+}
+.three {
+  background: blue;
+  transform: rotate(120deg);
+} */
+
+/* transition: change over time */
+/* div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+div:hover {
+  background-color: coral;
+}
+.one {
+  background: red;
+}
+.two {
+  background: green;
+}
+.three {
+  background: blue;
+  transition-property: background 3s 2s, border-radius;
+  /* transition-duration: 3s, 4s; */
+/* transition-delay: 1s; */
+/* transition: all 3s 3s;
+}
+.three:hover {
+  border-radius: 50%;
+} */
+
+/* 
+  transition-timing-function:
+  ease = default = slow start, fast, slow end
+  linear = same spped
+  ease-in = slow start
+  ease-out = slow end
+  ease-in-out = slow start&end
+*/
+
+/* transition 0 = 100%
+animation 0 %1 ... 100% 
+animation-fill-mode: what values are applied by the
+animation outside the time it is executing
+*/
+/* .animation {
+  background: blue;
+  animation: move 10s 3s infinite forwards;
+}
+@keyframes move {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  75% {
+    transform: translateX(-100px);
+    opacity: 0.5
+  }
+} */
+
+/* CSS variables
+--varName:value
+property:var(--varName)
+scope
+:root{} === global
+element === local
+any property
+*/
+/* .heading {
+  color: red;
+}
+.text {
+  color: blue;
+}
+.main-text {
+  color: greenyellow;
+}
+.second-heading {
+  color: orange;
+}
+.third-heading {
+  color: chocolate;
+} */
+/* :root {
+  --primaryColor: red;
+  --mainTransition: all 1s linear;
+  --secondaryColor: rgba(15, 29, 231, 0.753);
+}
+.heading {
+  color: var(--primaryColor);
+}
+.second-heading:hover {
+  color: var(--secondaryColor);
+} */
+
+/* icons
+font-awesome icons
+free, easy to get up running, simple syntax */
